@@ -1,0 +1,26 @@
+<?php 
+	
+
+	class Produto{
+
+		var $id_produto;
+		var $nome;
+		var $descricao;
+		var $valor;
+		var $imagem_produto;
+
+		function getNome(){
+
+			return $this->nome;
+		}
+
+		function setNome($nome){
+
+			$this->nome = $nome;
+		}
+	}
+
+	$prod = new Produto();
+	$prod->setNome("Colchão");
+	echo $prod->getNome();
+?>
